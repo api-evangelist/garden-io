@@ -1,0 +1,189 @@
+aid: garden-io
+url: https://raw.githubusercontent.com/api-evangelist/garden-io/refs/heads/main/apis.yml
+name: Garden
+kind: company
+description: >-
+  Garden is an open-source Kubernetes-native development and CI/CD platform.
+  Garden Core, a declarative CLI and engine, models a project as a graph of
+  Build, Deploy, Test, and Run actions powered by pluggable providers
+  (kubernetes, local-kubernetes, container, exec, jib, helm, terraform,
+  pulumi). Garden Cloud / Garden Enterprise add a hosted control plane for
+  remote container builds, ephemeral preview environments, team dashboards,
+  team-wide caching, secrets, RBAC, audit, and SSO. The CLI integrates with
+  any CI system and IDE; teams use Garden to standardize how dev, preview,
+  staging, and prod environments are built and deployed.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Kubernetes
+  - Developer Tools
+  - CI/CD
+  - Platform Engineering
+  - DevOps
+  - Preview Environments
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: garden-io:cli
+    name: Garden Core CLI
+    description: >-
+      Open-source command-line tool and engine that turns a Garden project
+      configuration into a graph of Build, Deploy, Test, and Run actions and
+      executes them locally or against remote Kubernetes clusters. Apache-2.0
+      licensed; the canonical entry point for using Garden.
+    humanURL: https://docs.garden.io/
+    baseURL: https://github.com/garden-io/garden
+    tags:
+      - CLI
+      - Open Source
+      - Kubernetes
+    properties:
+      - type: Repository
+        url: https://github.com/garden-io/garden
+      - type: Documentation
+        url: https://docs.garden.io/
+  - aid: garden-io:kubernetes-provider
+    name: Garden Kubernetes Provider
+    description: >-
+      Provider that connects Garden to remote Kubernetes clusters for builds
+      (in-cluster), deploys (manifests, kustomize, helm), tests, and runs. The
+      primary integration surface for production-like environments.
+    humanURL: https://docs.garden.io/reference/providers/kubernetes
+    baseURL: https://docs.garden.io/reference/providers/kubernetes
+    tags:
+      - Provider
+      - Kubernetes
+    properties:
+      - type: Documentation
+        url: https://docs.garden.io/reference/providers/kubernetes
+  - aid: garden-io:local-kubernetes-provider
+    name: Garden Local Kubernetes Provider
+    description: >-
+      Provider optimized for local Kubernetes distributions (minikube, kind,
+      k3s, Docker Desktop) so developers can run the same Garden project
+      against a workstation cluster.
+    humanURL: https://docs.garden.io/reference/providers/local-kubernetes
+    baseURL: https://docs.garden.io/reference/providers/local-kubernetes
+    tags:
+      - Provider
+      - Kubernetes
+      - Local
+    properties:
+      - type: Documentation
+        url: https://docs.garden.io/reference/providers/local-kubernetes
+  - aid: garden-io:container-provider
+    name: Garden Container Provider
+    description: >-
+      Provider for building, tagging, and publishing OCI container images used
+      by other Garden actions.
+    humanURL: https://docs.garden.io/reference/providers/container
+    baseURL: https://docs.garden.io/reference/providers/container
+    tags:
+      - Provider
+      - Containers
+      - Build
+    properties:
+      - type: Documentation
+        url: https://docs.garden.io/reference/providers/container
+  - aid: garden-io:exec-provider
+    name: Garden Exec Provider
+    description: >-
+      Provider that runs arbitrary local commands as part of the Garden action
+      graph, used for scripts, tooling, and shelling out to systems Garden
+      does not natively model.
+    humanURL: https://docs.garden.io/reference/providers/exec
+    baseURL: https://docs.garden.io/reference/providers/exec
+    tags:
+      - Provider
+      - Exec
+    properties:
+      - type: Documentation
+        url: https://docs.garden.io/reference/providers/exec
+  - aid: garden-io:jib-provider
+    name: Garden Jib Provider
+    description: >-
+      Provider that builds Java container images using Jib without a Docker
+      daemon, integrated into the Garden action graph.
+    humanURL: https://docs.garden.io/reference/providers/jib
+    baseURL: https://docs.garden.io/reference/providers/jib
+    tags:
+      - Provider
+      - Java
+      - Jib
+    properties:
+      - type: Documentation
+        url: https://docs.garden.io/reference/providers/jib
+  - aid: garden-io:terraform-provider
+    name: Garden Terraform Provider
+    description: >-
+      Provider that lets Garden invoke Terraform stacks as part of an
+      environment, wiring outputs into downstream Garden actions.
+    humanURL: https://docs.garden.io/reference/providers/terraform
+    baseURL: https://docs.garden.io/reference/providers/terraform
+    tags:
+      - Provider
+      - Terraform
+      - Infrastructure
+    properties:
+      - type: Documentation
+        url: https://docs.garden.io/reference/providers/terraform
+  - aid: garden-io:pulumi-provider
+    name: Garden Pulumi Provider
+    description: >-
+      Provider that lets Garden invoke Pulumi programs as part of an
+      environment, wiring outputs into downstream Garden actions.
+    humanURL: https://docs.garden.io/reference/providers/pulumi
+    baseURL: https://docs.garden.io/reference/providers/pulumi
+    tags:
+      - Provider
+      - Pulumi
+      - Infrastructure
+    properties:
+      - type: Documentation
+        url: https://docs.garden.io/reference/providers/pulumi
+  - aid: garden-io:cloud
+    name: Garden Cloud / Enterprise
+    description: >-
+      Hosted Garden control plane providing remote container builds, ephemeral
+      preview environments, team-wide caching, secrets management, RBAC, SSO,
+      audit logging, and dashboards on top of Garden Core. Programmatic access
+      is via the Garden CLI authenticated to a Cloud project; a public REST
+      API surface is not broadly published.
+    humanURL: https://cloud.docs.garden.io/
+    baseURL: https://app.garden.io
+    tags:
+      - Cloud
+      - Enterprise
+      - Platform
+    properties:
+      - type: Documentation
+        url: https://cloud.docs.garden.io/
+common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/garden-io
+  - type: Website
+    url: https://garden.io/
+  - type: Documentation
+    url: https://docs.garden.io/
+  - type: GitHub
+    url: https://github.com/garden-io
+  - type: Plans
+    url: plans/garden-io-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/garden-io-rate-limits.yml
+  - type: FinOps
+    url: finops/garden-io-finops.yml
+  - type: Integrations
+    url: https://docs.garden.io/reference/providers
+integrations:
+  - name: Kubernetes
+  - name: Helm
+  - name: Terraform
+  - name: Pulumi
+  - name: GitHub Actions
+  - name: GitLab CI
+  - name: CircleCI
+  - name: Buildkite
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
