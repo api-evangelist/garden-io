@@ -175,6 +175,8 @@ common:
     url: finops/garden-io-finops.yml
   - type: Integrations
     url: https://docs.garden.io/reference/providers
+  - type: LLMsTxt
+    url: https://docs.garden.io/llms.txt
 integrations:
   - name: Kubernetes
   - name: Helm
