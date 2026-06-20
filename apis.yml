@@ -12,7 +12,7 @@ description: >-
   team-wide caching, secrets, RBAC, audit, and SSO. The CLI integrates with
   any CI system and IDE; teams use Garden to standardize how dev, preview,
   staging, and prod environments are built and deployed.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Kubernetes
   - Developer Tools
