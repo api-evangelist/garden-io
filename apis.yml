@@ -175,7 +175,7 @@ common:
     url: finops/garden-io-finops.yml
   - type: Integrations
     url: https://docs.garden.io/reference/providers
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.garden.io/llms.txt
 integrations:
   - name: Kubernetes
