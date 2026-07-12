@@ -1,0 +1,25 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: garden.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  1 11:53:44 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: docs.garden.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 30 18:22:13 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: cloud.docs.garden.io
+  https: false
+domains:
+- domain: garden.io
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
