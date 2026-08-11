@@ -171,6 +171,17 @@ apis:
       - type: Documentation
         url: https://cloud.docs.garden.io/
 common:
+  - type: IssueTracker
+    url: https://github.com/garden-io/garden/issues
+  - type: Releases
+    url: https://github.com/garden-io/garden/releases
+  - type: SecurityPolicy
+    url: https://github.com/garden-io/garden/blob/main/SECURITY.md
+  - type: ContributionGuide
+    url: https://github.com/garden-io/garden/blob/main/CONTRIBUTING.md
+  - type: License
+    name: MPL-2.0
+    url: https://github.com/garden-io/garden/blob/main/LICENSE
   - type: DomainSecurity
     url: security/garden-io-domain-security.yml
   - type: LinkedIn
