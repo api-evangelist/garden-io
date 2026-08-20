@@ -47,6 +47,10 @@ apis:
     baseURL: https://github.com/garden-io/garden
     tags:
       - CLI
+      - Open-Source
+      - Kubernetes
+    tags_raw:
+      - CLI
       - Open Source
       - Kubernetes
     properties:
@@ -91,6 +95,10 @@ apis:
     humanURL: https://docs.garden.io/reference/providers/container
     baseURL: https://docs.garden.io/reference/providers/container
     tags:
+      - Provider
+      - Containers
+      - Builds
+    tags_raw:
       - Provider
       - Containers
       - Build
