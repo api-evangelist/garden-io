@@ -12,6 +12,19 @@ description: >-
   team-wide caching, secrets, RBAC, audit, and SSO. The CLI integrates with
   any CI system and IDE; teams use Garden to standardize how dev, preview,
   staging, and prod environments are built and deployed.
+deliveryModel:
+  model: open-core
+  license: MPL-2.0
+  open_source: true
+  commercial: true
+  callable_host: false
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: high
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
