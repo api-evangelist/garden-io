@@ -80,6 +80,9 @@ apis:
     humanURL: https://docs.garden.io/reference/providers/kubernetes
     baseURL: https://docs.garden.io/reference/providers/kubernetes
     tags:
+      - Providers
+      - Kubernetes
+    tags_raw:
       - Provider
       - Kubernetes
     properties:
@@ -94,6 +97,10 @@ apis:
     humanURL: https://docs.garden.io/reference/providers/local-kubernetes
     baseURL: https://docs.garden.io/reference/providers/local-kubernetes
     tags:
+      - Providers
+      - Kubernetes
+      - Local
+    tags_raw:
       - Provider
       - Kubernetes
       - Local
@@ -108,7 +115,7 @@ apis:
     humanURL: https://docs.garden.io/reference/providers/container
     baseURL: https://docs.garden.io/reference/providers/container
     tags:
-      - Provider
+      - Providers
       - Containers
       - Builds
     tags_raw:
@@ -127,6 +134,9 @@ apis:
     humanURL: https://docs.garden.io/reference/providers/exec
     baseURL: https://docs.garden.io/reference/providers/exec
     tags:
+      - Providers
+      - Exec
+    tags_raw:
       - Provider
       - Exec
     properties:
@@ -140,6 +150,10 @@ apis:
     humanURL: https://docs.garden.io/reference/providers/jib
     baseURL: https://docs.garden.io/reference/providers/jib
     tags:
+      - Providers
+      - Java
+      - Jib
+    tags_raw:
       - Provider
       - Java
       - Jib
@@ -154,6 +168,10 @@ apis:
     humanURL: https://docs.garden.io/reference/providers/terraform
     baseURL: https://docs.garden.io/reference/providers/terraform
     tags:
+      - Providers
+      - Terraform
+      - Infrastructure
+    tags_raw:
       - Provider
       - Terraform
       - Infrastructure
@@ -168,6 +186,10 @@ apis:
     humanURL: https://docs.garden.io/reference/providers/pulumi
     baseURL: https://docs.garden.io/reference/providers/pulumi
     tags:
+      - Providers
+      - Pulumi
+      - Infrastructure
+    tags_raw:
       - Provider
       - Pulumi
       - Infrastructure
