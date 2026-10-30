@@ -1,4 +1,4 @@
-# garden-io
+# Garden
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Garden — Kubernetes development + CI/CD platform
+Garden is an open-source Kubernetes-native development and CI/CD platform. Garden Core, a declarative CLI and engine, models a project as a graph of Build, Deploy, Test, and Run actions powered by pluggable providers (kubernetes, local-kubernetes, container, exec, jib, helm, terraform, pulumi). Garden Cloud / Garden Enterprise add a hosted control plane for remote container builds, ephemeral preview environments, team dashboards, team-wide caching, secrets, RBAC, audit, and SSO. The CLI integrates with any CI system and IDE; teams use Garden to standardize how dev, preview, staging, and prod environments are built and deployed.
+
+**Areas:** Kubernetes · Developer Tools · CI/CD · Platform Engineering · DevOps · Preview Environments
+
+## Garden on APIs.io
+
+Everything profiled for Garden is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/garden-io/](https://apis.io/providers/garden-io/)** — or go straight to one of the APIs or properties below.
+
+### APIs (9)
+
+- [Garden Core CLI](https://apis.io/apis/garden-io/cli/) — Open-source command-line tool and engine that turns a Garden project configuration into a graph of Build, Deploy, Test, and Run actions and executes them…
+- [Garden Kubernetes Provider](https://apis.io/apis/garden-io/kubernetes-provider/) — Provider that connects Garden to remote Kubernetes clusters for builds (in-cluster), deploys (manifests, kustomize, helm), tests, and runs. The primary…
+- [Garden Local Kubernetes Provider](https://apis.io/apis/garden-io/local-kubernetes-provider/) — Provider optimized for local Kubernetes distributions (minikube, kind, k3s, Docker Desktop) so developers can run the same Garden project against a…
+- [Garden Container Provider](https://apis.io/apis/garden-io/container-provider/) — Provider for building, tagging, and publishing OCI container images used by other Garden actions.
+- [Garden Exec Provider](https://apis.io/apis/garden-io/exec-provider/) — Provider that runs arbitrary local commands as part of the Garden action graph, used for scripts, tooling, and shelling out to systems Garden does not…
+- [Garden Jib Provider](https://apis.io/apis/garden-io/jib-provider/) — Provider that builds Java container images using Jib without a Docker daemon, integrated into the Garden action graph.
+- [Garden Terraform Provider](https://apis.io/apis/garden-io/terraform-provider/) — Provider that lets Garden invoke Terraform stacks as part of an environment, wiring outputs into downstream Garden actions.
+- [Garden Pulumi Provider](https://apis.io/apis/garden-io/pulumi-provider/) — Provider that lets Garden invoke Pulumi programs as part of an environment, wiring outputs into downstream Garden actions.
+- [Garden Cloud / Enterprise](https://apis.io/apis/garden-io/cloud/) — Hosted Garden control plane providing remote container builds, ephemeral preview environments, team-wide caching, secrets management, RBAC, SSO, audit…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Garden Io Domain Security](https://apis.io/security/garden-io/garden-io-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Garden Io Plans Pricing](https://apis.io/plans/garden-io/garden-io-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Garden Io Rate Limits](https://apis.io/rate-limits/garden-io/garden-io-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Garden Io Finops](https://apis.io/finops/garden-io/garden-io-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://garden.io/)
+- [Documentation](https://docs.garden.io/)
+
+## API Evangelist rating
+
+**Kin Score 21.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/garden-io/](https://apis.io/providers/garden-io/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Garden: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/garden-io/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
